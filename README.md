@@ -14,3 +14,5 @@ Staging refresh: mobile navigation containment and independent app workspaces.
 Staging refresh: remove mixed legacy dashboard elements and keep the reference-style driver home as the single home layout.
 
 Staging refresh: simplify Customer, Driver and Company Admin navigation; group secondary tools under More. 2026-11-22.
+
+Staging refresh: remove redundant Navigate workspace dropdown; keep direct page navigation and More menu. 2026-11-22.
