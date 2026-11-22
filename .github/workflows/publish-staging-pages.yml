@@ -83,6 +83,14 @@ jobs:
             process.exit(1);
           }
           console.log('Checked ' + htmlFiles.length + ' HTML pages: all local assets and links resolve.');
+          const configs = ['customer/supabase-config.js', 'driver/supabase-config.js', 'company/supabase-config.js'];
+          for (const file of configs) {
+            const source = fs.readFileSync(path.join(root, file), 'utf8');
+            if (!source.includes("startsWith('/swifthaul-sa-staging/')") || !source.includes('https://tagkbropgzthsbjlhyvz.supabase.co')) {
+              throw new Error('Staging Supabase routing check failed for ' + file);
+            }
+          }
+          console.log('Verified all three browser apps route GitHub Pages traffic to the isolated staging Supabase project.');
           NODE
 
       - name: Configure GitHub Pages
