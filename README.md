@@ -20,3 +20,6 @@ Staging refresh: remove redundant Navigate workspace dropdown; keep direct page 
 Staging refresh: rebuild Customer booking into a simple three-step pickup, parcel and review flow. 2026-11-22.
 
 Staging refresh: match Customer booking screen to original Delivery Tracking graphite, route-map and silver-action design. 2026-11-22.
+
+
+Staging rebuild requested for the approved SwiftHaul Premium Graphite three-app frontend refresh (2026-11-22). Production remains unchanged.
