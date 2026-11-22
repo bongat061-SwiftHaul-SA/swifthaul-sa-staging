@@ -41,3 +41,5 @@ Staging refresh: correct Driver Map portal's shared map-context script path. 202
 Staging routing refresh: 2026-11-22.
 
 Staging routing guard: 2026-11-22.
+
+Staging refresh: restore Driver Premium and cash operations endpoints; correct insurance status GET request. 2026-11-22.
