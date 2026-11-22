@@ -7,4 +7,4 @@ This repository publishes the Customer, Driver and Company Admin browser apps fr
 - Company Admin: `/company/`
 
 
-Staging rebuild trigger: route-aware tracking assets and cache refresh, 2026-11-22.
+Staging rebuild trigger: customer tracking progress sheet and refreshed assets, 2026-11-22.
