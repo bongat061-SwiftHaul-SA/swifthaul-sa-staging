@@ -16,3 +16,5 @@ Staging refresh: remove mixed legacy dashboard elements and keep the reference-s
 Staging refresh: simplify Customer, Driver and Company Admin navigation; group secondary tools under More. 2026-11-22.
 
 Staging refresh: remove redundant Navigate workspace dropdown; keep direct page navigation and More menu. 2026-11-22.
+
+Staging refresh: rebuild Customer booking into a simple three-step pickup, parcel and review flow. 2026-11-22.
