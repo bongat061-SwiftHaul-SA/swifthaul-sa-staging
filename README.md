@@ -23,3 +23,5 @@ Staging refresh: match Customer booking screen to original Delivery Tracking gra
 
 
 Staging rebuild requested for the approved SwiftHaul Premium Graphite three-app frontend refresh (2026-11-22). Production remains unchanged.
+
+Staging refresh: style Customer booking to match the original Delivery Tracking reference screen. 2026-11-22.
