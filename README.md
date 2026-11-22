@@ -7,4 +7,4 @@ This repository publishes the Customer, Driver and Company Admin browser apps fr
 - Company Admin: `/company/`
 
 
-Staging rebuild trigger: cross-app Customer and Driver mode switching, shared live offer workflow, 2026-11-22.
+Staging rebuild trigger: phone-reference visual fidelity pass for Customer Home, Booking, Tracking and Driver Dashboard, 2026-11-22.
