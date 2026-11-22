@@ -38,13 +38,16 @@ jobs:
         working-directory: source
         run: node scripts/build-pages.cjs
 
-      - name: Verify all three app entry points
+      - name: Verify all three app and portal entry points
         working-directory: source
         run: |
           test -f dist/index.html
           test -f dist/customer/index.html
           test -f dist/driver/index.html
           test -f dist/company/index.html
+          test -f dist/customer-portal/index.html
+          test -f dist/driver-portal/index.html
+          test -f dist/company-portal/index.html
           test -f dist/.nojekyll
 
       - name: Configure GitHub Pages
