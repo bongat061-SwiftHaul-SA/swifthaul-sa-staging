@@ -1,0 +1,67 @@
+name: Publish SwiftHaul staging browser apps
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: swift-haul-staging-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out staging publisher
+        uses: actions/checkout@v4
+
+      - name: Check out SwiftHaul application staging branch
+        uses: actions/checkout@v4
+        with:
+          repository: bongat061-SwiftHaul-SA/swifthaul-sa
+          ref: feature/reference-image-mobile-apps-staging
+          path: source
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build three independent browser apps
+        working-directory: source
+        run: node scripts/build-pages.cjs
+
+      - name: Verify all three app entry points
+        working-directory: source
+        run: |
+          test -f dist/index.html
+          test -f dist/customer/index.html
+          test -f dist/driver/index.html
+          test -f dist/company/index.html
+          test -f dist/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: source/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Publish staging website
+        id: deployment
+        uses: actions/deploy-pages@v4
