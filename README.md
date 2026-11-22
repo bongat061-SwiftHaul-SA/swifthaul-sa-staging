@@ -12,3 +12,5 @@ Staging rebuild trigger: force browser cache refresh for the reference design st
 Staging refresh: mobile navigation containment and independent app workspaces.
 
 Staging refresh: remove mixed legacy dashboard elements and keep the reference-style driver home as the single home layout.
+
+Staging refresh: simplify Customer, Driver and Company Admin navigation; group secondary tools under More. 2026-11-22.
