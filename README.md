@@ -47,3 +47,5 @@ Staging routing guard: 2026-11-22.
 Staging refresh: restore Driver Premium and cash operations endpoints; correct insurance status GET request. 2026-11-22.
 
 Staging refresh: publish Driver onboarding submission-button fix from app commit 4591a265f826ed44ca99035030a864f1e68a7f55. Staging only; production unchanged. 2026-11-23.
+
+Staging refresh: bump Driver onboarding script cache after direct-submit fix; app commit 6177cc9411762dbcb94199a51de43a77710412da. Production unchanged. 2026-11-23.
