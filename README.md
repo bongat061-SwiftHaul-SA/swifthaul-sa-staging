@@ -35,3 +35,5 @@ Staging refresh: publish three focused mobile apps and three separate full-featu
 Staging refresh: enforce app-only core navigation and route customer payments and driver account tools to their separate website portals. 2026-11-22.
 
 Staging refresh: fix driver navigation page-state reference and refresh script cache. 2026-11-22.
+
+Staging refresh: correct Driver Map portal's shared map-context script path. 2026-11-22.
