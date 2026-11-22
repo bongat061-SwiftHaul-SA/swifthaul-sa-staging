@@ -18,3 +18,5 @@ Staging refresh: simplify Customer, Driver and Company Admin navigation; group s
 Staging refresh: remove redundant Navigate workspace dropdown; keep direct page navigation and More menu. 2026-11-22.
 
 Staging refresh: rebuild Customer booking into a simple three-step pickup, parcel and review flow. 2026-11-22.
+
+Staging refresh: match Customer booking screen to original Delivery Tracking graphite, route-map and silver-action design. 2026-11-22.
