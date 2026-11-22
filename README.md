@@ -7,4 +7,4 @@ This repository publishes the Customer, Driver and Company Admin browser apps fr
 - Company Admin: `/company/`
 
 
-Staging rebuild trigger: customer and driver dashboard composition refresh, 2026-11-22.
+Staging rebuild trigger: route-aware delivery tracking UI, 2026-11-22.
