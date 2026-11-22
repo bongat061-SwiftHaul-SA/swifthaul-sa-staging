@@ -5,3 +5,6 @@ This repository publishes the Customer, Driver and Company Admin browser apps fr
 - Customer: `/customer/`
 - Driver: `/driver/`
 - Company Admin: `/company/`
+
+
+Staging rebuild trigger: customer and driver dashboard composition refresh, 2026-11-22.
