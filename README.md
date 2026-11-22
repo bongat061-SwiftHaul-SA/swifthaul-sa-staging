@@ -37,3 +37,5 @@ Staging refresh: enforce app-only core navigation and route customer payments an
 Staging refresh: fix driver navigation page-state reference and refresh script cache. 2026-11-22.
 
 Staging refresh: correct Driver Map portal's shared map-context script path. 2026-11-22.
+
+Staging routing refresh: 2026-11-22.
