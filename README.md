@@ -39,3 +39,5 @@ Staging refresh: fix driver navigation page-state reference and refresh script c
 Staging refresh: correct Driver Map portal's shared map-context script path. 2026-11-22.
 
 Staging routing refresh: 2026-11-22.
+
+Staging routing guard: 2026-11-22.
