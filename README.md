@@ -7,4 +7,4 @@ This repository publishes the Customer, Driver and Company Admin browser apps fr
 - Company Admin: `/company/`
 
 
-Staging rebuild trigger: phone-reference visual fidelity pass for Customer Home, Booking, Tracking and Driver Dashboard, 2026-11-22.
+Staging rebuild trigger: force browser cache refresh for the reference design stylesheets, 2026-11-22.
