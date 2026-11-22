@@ -1,5 +1,7 @@
 name: Publish SwiftHaul staging browser apps
 
+# Rebuild the Pages artifact from the latest application staging branch on publisher updates.
+
 on:
   workflow_dispatch:
   push:
@@ -65,10 +67,10 @@ jobs:
           const missing = [];
           for (const htmlFile of htmlFiles) {
             if (path.relative(root, htmlFile).startsWith('public' + path.sep)) continue;
-          const html = fs.readFileSync(htmlFile, 'utf8');
-            for (const match of html.matchAll(/\b(?:src|href)\s*=\s*["']([^"']+)["']/gi)) {
+            const html = fs.readFileSync(htmlFile, 'utf8');
+            for (const match of html.matchAll(/\\b(?:src|href)\\s*=\\s*[\"']([^\"']+)[\"']/gi)) {
               const value = match[1].trim();
-              if (!value || value.startsWith('/') || /^(?:[a-z][a-z0-9+.-]*:|\/\/|#|\?)/i.test(value)) continue;
+              if (!value || value.startsWith('/') || /^(?:[a-z][a-z0-9+.-]*:|\\/\\/|#|\\?)/i.test(value)) continue;
               const pathname = decodeURIComponent(value.split(/[?#]/, 1)[0]);
               if (!pathname) continue;
               const target = path.resolve(path.dirname(htmlFile), pathname);
@@ -86,7 +88,7 @@ jobs:
           const configs = ['customer/supabase-config.js', 'driver/supabase-config.js', 'company/supabase-config.js'];
           for (const file of configs) {
             const source = fs.readFileSync(path.join(root, file), 'utf8');
-            if (!source.includes("startsWith('/swifthaul-sa-staging/')") || !source.includes('https://tagkbropgzthsbjlhyvz.supabase.co')) {
+            if (!source.includes(\"startsWith('/swifthaul-sa-staging/')\") || !source.includes('https://tagkbropgzthsbjlhyvz.supabase.co')) {
               throw new Error('Staging Supabase routing check failed for ' + file);
             }
           }
