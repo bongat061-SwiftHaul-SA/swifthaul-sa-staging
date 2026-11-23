@@ -53,3 +53,5 @@ Staging refresh: bump Driver onboarding script cache after direct-submit fix; ap
 
 <!-- staging-refresh -->
 Driver onboarding submit form-scope fix: 2026-11-23.
+
+Staging refresh: driver onboarding validation diagnostics 2026-11-23 16:30 SAST.
